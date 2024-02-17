@@ -1,6 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
 class Pinit < Formula
   desc ""
   homepage ""
@@ -9,7 +6,7 @@ class Pinit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/enuesaa/pinit/releases/download/v0.0.7/pinit_0.0.7_darwin_amd64.tar.gz"
-      sha256 "2e02033d4ffcbaa1a33c0d72e4863e3d6ec47f7a0235c0560440dec9155e6310"
+      sha256 "aaa80f227cb24dd0ceb2226506a7747dccff384a0927d31e093e73f355fff975"
 
       def install
         bin.install "pinit"
@@ -17,7 +14,7 @@ class Pinit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/enuesaa/pinit/releases/download/v0.0.7/pinit_0.0.7_darwin_arm64.tar.gz"
-      sha256 "43c403494575a8a9fb5fdbe9f324e7ff3e4c18721a66d02c171c4fad3c1d66d4"
+      sha256 "2636247602d5ed6c2a8bf22b0ccfae4763ef7d15a12e7cb0c718374ac9e04346"
 
       def install
         bin.install "pinit"
@@ -28,7 +25,7 @@ class Pinit < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/enuesaa/pinit/releases/download/v0.0.7/pinit_0.0.7_linux_arm64.tar.gz"
-      sha256 "85e3e0a0d1d9ab0e439675c65e351e7784e31e81a846d50cae88d8e599f85510"
+      sha256 "d5aa27728d80b38044a67e3e3df2df66b2c1e6db21dbf4f1a58598847164ee0e"
 
       def install
         bin.install "pinit"
@@ -36,7 +33,7 @@ class Pinit < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/enuesaa/pinit/releases/download/v0.0.7/pinit_0.0.7_linux_amd64.tar.gz"
-      sha256 "c72a6e38ba0237cd57c3dfb872978ef4e5a8bb086f9d3baab390244ed84e94d9"
+      sha256 "a3ac7dcc914ba9387829c6901a2693bf23b46bbd9bb0b0651de80b66b714ad65"
 
       def install
         bin.install "pinit"
