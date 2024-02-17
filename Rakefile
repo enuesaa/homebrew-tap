@@ -1,3 +1,7 @@
-task :req do
-  ruby 'req.rb'
+task :hello do
+  puts 'hello'
+end
+
+task :run do
+  ruby 'lib/parse.rb'
 end
