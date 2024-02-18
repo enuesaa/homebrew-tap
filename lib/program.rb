@@ -14,14 +14,17 @@ class Program
     "#{@user}/#{@name}"
   end
 
-  def fetch
+  def fetch_version
+    fetcher = Assetfetcher.new(repo)
+    fetcher.latest_version
+  end
+
+  def fetch_checksums
     fetcher = Assetfetcher.new(repo)
     for url in fetcher.list_urls do
       if url.include? 'checksum'
         body = fetcher.fetch_body(url)
-        checksums = Checksums.new(body)
-        puts checksums
-        write(checksums)
+        return Checksums.new(url, body)
       end
     end
   end
@@ -36,9 +39,8 @@ class Program
     File.join(project, "lib/formula.erb")
   end
 
-  def write(checksums)
-    name = 'pinit'
-    version = '0.0.7'
+  def write(version, checksums)
+    name = @name
 
     tmpl = File.read(tmplpath)
     rendered = ERB.new(tmpl).result(binding)

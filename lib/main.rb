@@ -1,4 +1,8 @@
 require_relative 'program'
 
-pinit = Program.new('enuesaa', 'pinit')
-pinit.fetch()
+for name in ['pinit', 'cpbuf']
+  program = Program.new('enuesaa', name)
+  checksums = program.fetch_checksums
+  version = program.fetch_version
+  program.write(version, checksums)
+end

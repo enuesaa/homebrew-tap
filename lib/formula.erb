@@ -12,6 +12,7 @@ class <%= name.capitalize %> < Formula
         bin.install "<%= name %>"
       end
     end
+
     if Hardware::CPU.arm?
       url "<%= checksums.macarm64url %>"
       sha256 "<%= checksums.macarm64sha256 %>"

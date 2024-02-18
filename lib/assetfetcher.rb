@@ -8,6 +8,12 @@ class Assetfetcher
     @repo = repo
   end
 
+  def latest_version
+    client = Octokit::Client.new
+    latest_release = client.latest_release(@repo)
+    latest_release.tag_name
+  end
+
   def list_urls
     client = Octokit::Client.new
     latest_release = client.latest_release(@repo)
