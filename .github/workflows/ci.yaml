@@ -15,4 +15,4 @@ jobs:
           ruby-version: '3.3'
 
       - run: bundle install
-      - run: rake list
+      - run: rake run
