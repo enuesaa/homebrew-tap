@@ -1,4 +1,4 @@
-name: update
+name: ci
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
@@ -15,4 +15,3 @@ jobs:
           ruby-version: '3.3'
 
       - run: bundle install
-      - run: rake run
