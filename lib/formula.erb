@@ -1,0 +1,24 @@
+class <%= name.capitalize %> < Formula
+  desc ""
+  homepage ""
+  version "<%= version %>"
+
+  on_macos do
+    if Hardware::CPU.intel?
+      url "<%= checksums.macamd64url %>"
+      sha256 "<%= checksums.macamd64sha256 %>"
+
+      def install
+        bin.install "<%= name %>"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "<%= checksums.macarm64url %>"
+      sha256 "<%= checksums.macarm64sha256 %>"
+
+      def install
+        bin.install "<%= name %>"
+      end
+    end
+  end
+end
