@@ -20,11 +20,14 @@ jobs:
 
       - run: bundle install
       - run: rake run
+
+      # create pr if file changed.
       - uses: peter-evans/create-pull-request@v5
         with:
           commit-message: 'chore: bump up versions'
           title: '[bot] bump'
-          body: 'Automated changes by actions. \nPlease look at file changes.'
+          body: 'Automated changes by actions. Please look at file changes.'
           reviewers: enuesaa
+          assignees: enuesaa
           branch: bump/patch
           branch-suffix: timestamp
