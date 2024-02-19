@@ -89,7 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   octokit (~> 8.1)
-  steep (~> 1.6)
+  steep
 
 BUNDLED WITH
    2.5.3
