@@ -3,3 +3,5 @@
 source "https://rubygems.org"
 
 gem "octokit", "~> 8.1"
+
+gem "steep", "~> 1.6"
