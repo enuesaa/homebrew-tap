@@ -15,3 +15,5 @@ jobs:
           ruby-version: '3.3'
 
       - run: bundle install
+      - run: rake rbsinstall
+      - run: rake check

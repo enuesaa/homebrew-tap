@@ -6,3 +6,7 @@ end
 task :check do
   sh 'bundle exec steep check'
 end
+
+tasl :rbsinstall do
+  sh 'bundle exec rbs collection install'
+end

@@ -4,9 +4,7 @@ target :lib do
   signature "sig"
 
   check "lib"
-  check "Gemfile"
-  library "net/http"
-  library "erb"
+  collection_config "rbs_collection.yaml"
 
   # configure_code_diagnostics(D::Ruby.default)      # `default` diagnostics setting (applies by default)
   # configure_code_diagnostics(D::Ruby.strict)       # `strict` diagnostics setting
