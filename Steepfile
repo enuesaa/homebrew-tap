@@ -3,10 +3,10 @@
 target :lib do
   signature "sig"
 
-  check "lib"                       # Directory name
-  check "Gemfile"                   # File name
-  # library "pathname"              # Standard libraries
-  # library "strong_json"           # Gems
+  check "lib"
+  check "Gemfile"
+  library "net/http"
+  library "erb"
 
   # configure_code_diagnostics(D::Ruby.default)      # `default` diagnostics setting (applies by default)
   # configure_code_diagnostics(D::Ruby.strict)       # `strict` diagnostics setting
