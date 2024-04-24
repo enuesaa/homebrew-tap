@@ -1,12 +1,12 @@
 class Walkin < Formula
   desc ""
   homepage ""
-  version "v0.0.2"
+  version "v0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/walkin/releases/download/v0.0.2/walkin_0.0.2_darwin_amd64.tar.gz"
-      sha256 "0ab60a17a71c4c35880f3ca6e615944657ff4c084d7946dc3bb05ad3c53a8b35"
+      url "https://github.com/enuesaa/walkin/releases/download/v0.0.4/walkin_0.0.4_darwin_amd64.tar.gz"
+      sha256 "e3842c76abd390702117da004011179db81dac09ad40e808d1e89b844a8f37d0"
 
       def install
         bin.install "walkin"
@@ -14,8 +14,8 @@ class Walkin < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/walkin/releases/download/v0.0.2/walkin_0.0.2_darwin_arm64.tar.gz"
-      sha256 "481f31123b495458e603e56fe241ce406f0c4f7ac5513d9aa6b9e0f81e2fef26"
+      url "https://github.com/enuesaa/walkin/releases/download/v0.0.4/walkin_0.0.4_darwin_arm64.tar.gz"
+      sha256 "c20b6241b81a3812d1d92e64228f12f6e92ff7dfed2c327fba0c87835d0197f5"
 
       def install
         bin.install "walkin"
