@@ -1,12 +1,12 @@
 class Cpbuf < Formula
   desc ""
   homepage ""
-  version "v0.0.13"
+  version "v0.0.14"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/cpbuf/releases/download/v0.0.13/cpbuf_0.0.13_darwin_amd64.tar.gz"
-      sha256 "e09936957ecb3a211a76de7b61c03de53e96ce5c2ea12fe64b6f81e0c523a383"
+      url "https://github.com/enuesaa/cpbuf/releases/download/v0.0.14/cpbuf_0.0.14_darwin_amd64.tar.gz"
+      sha256 "7b3af59dbd420da61da6984d1280209ed0893be3db9b046631cbde399d2c2f7a"
 
       def install
         bin.install "cpbuf"
@@ -14,8 +14,8 @@ class Cpbuf < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/cpbuf/releases/download/v0.0.13/cpbuf_0.0.13_darwin_arm64.tar.gz"
-      sha256 "e1c546e118ed68c6790328bb9685ed63a6054b5fcd2357afdfa062489a551459"
+      url "https://github.com/enuesaa/cpbuf/releases/download/v0.0.14/cpbuf_0.0.14_darwin_arm64.tar.gz"
+      sha256 "a0be62cb9235789322ec23e4c43a55126d03ff4b7fcaa7a4e0e958ad12f509a1"
 
       def install
         bin.install "cpbuf"
