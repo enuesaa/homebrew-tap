@@ -1,12 +1,12 @@
 class Pinit < Formula
   desc ""
   homepage ""
-  version "v0.0.8"
+  version "v0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/pinit/releases/download/v0.0.8/pinit_0.0.8_darwin_amd64.tar.gz"
-      sha256 "ffcfcd163f6ba16fdb4cc82a837a3fad9985b41a2af8c362431e7dbc489638fa"
+      url "https://github.com/enuesaa/pinit/releases/download/v0.0.9/pinit_0.0.9_darwin_amd64.tar.gz"
+      sha256 "5547e26d4f695d4773e0bf5ac256adb0d4e676be33190abc7d35ac3dde13b322"
 
       def install
         bin.install "pinit"
@@ -14,8 +14,8 @@ class Pinit < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/pinit/releases/download/v0.0.8/pinit_0.0.8_darwin_arm64.tar.gz"
-      sha256 "19890c5568c6a917cd1dec17183ffdfc88b7352e5cbd4f8651d5cf40ab210a03"
+      url "https://github.com/enuesaa/pinit/releases/download/v0.0.9/pinit_0.0.9_darwin_arm64.tar.gz"
+      sha256 "89e826ad60597beeae684be57826c4cb797c538fb369f3eb7195494b06f8f4ab"
 
       def install
         bin.install "pinit"
