@@ -1,12 +1,12 @@
 class Loadii < Formula
   desc ""
   homepage ""
-  version "v0.0.7"
+  version "v0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/loadii/releases/download/v0.0.7/loadii_0.0.7_darwin_amd64.tar.gz"
-      sha256 "48543d0cbc00930870c850a029c574cc948f5ae16dbf8d8f240070d083a8f404"
+      url "https://github.com/enuesaa/loadii/releases/download/v0.0.8/loadii_0.0.8_darwin_amd64.tar.gz"
+      sha256 "d1fe910345f6f49187b6441e06a1049934e0c42f3cc26cfbf5b26eace144550b"
 
       def install
         bin.install "loadii"
@@ -14,8 +14,8 @@ class Loadii < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/loadii/releases/download/v0.0.7/loadii_0.0.7_darwin_arm64.tar.gz"
-      sha256 "99747b187d5f949853c2967f45c431a86d4f1cf7427de62afec5b0c43c93aec6"
+      url "https://github.com/enuesaa/loadii/releases/download/v0.0.8/loadii_0.0.8_darwin_arm64.tar.gz"
+      sha256 "e89b5f8adfd4a6cef6c42ec3a8b1865061abd3ab43809dfe136171f6cc1e5d37"
 
       def install
         bin.install "loadii"
