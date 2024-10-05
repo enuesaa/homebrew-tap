@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   bump:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
@@ -21,21 +21,19 @@ jobs:
       - run: bundle install
       - run: rake run
 
-      # create pr if file changed.
+      # create pr if file changed
       - id: pr
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: 'chore: bump up versions'
           title: '[bot] bump'
           body: 'Automated changes by actions. Please look at file changes.'
-          reviewers: enuesaa
           author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
           branch: bump/patch
           branch-suffix: timestamp
 
-      # see https://github.com/peter-evans/enable-pull-request-automerge
       - if: steps.pr.outputs.pull-request-operation == 'created'
-        run: gh pr merge --auto --merge --delete-branch "$PR_NUMBER"
+        run: gh pr merge --auto --merge --delete-branch $PR_NUMBER
         env:
           PR_NUMBER: ${{ steps.pr.outputs.pull-request-number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
