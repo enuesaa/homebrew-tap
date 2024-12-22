@@ -2,6 +2,7 @@ name: bump
 
 on:
   schedule:
+    # 水曜0時
     - cron: '0 0 * * 3'
   workflow_dispatch:
 
@@ -14,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
