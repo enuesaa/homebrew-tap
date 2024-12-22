@@ -1,6 +1,6 @@
 require_relative 'program'
 
-for name in ['pinit', 'cpbuf', 'difii', 'imgpack', 'walkhttp', 'loadii']
+for name in ['pinit', 'cpbuf', 'difii', 'imgpack', 'walkhttp', 'loadii', 'dotslide']
   program = Program.new('enuesaa', name)
   checksums = program.fetch_checksums
   version = program.fetch_version
