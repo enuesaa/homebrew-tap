@@ -2,8 +2,7 @@ name: bump
 
 on:
   schedule:
-    # 水曜0時
-    - cron: '0 0 * * 3'
+    - cron: '0 0 * * 3' # 水曜0時
   workflow_dispatch:
 
 permissions:
@@ -27,9 +26,9 @@ jobs:
       - id: pr
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: 'chore: bump up versions'
-          title: '[bot] bump'
-          body: 'Automated changes by actions. Please look at file changes.'
+          commit-message: 'chore: Bump versions'
+          title: 'bot: Bump versions'
+          body: Automated changes by GitHub Actions
           author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
           branch: bump/patch
           branch-suffix: timestamp
