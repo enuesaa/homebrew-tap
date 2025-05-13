@@ -1,12 +1,12 @@
 class Cywagon < Formula
   desc ""
   homepage ""
-  version "v0.0.3"
+  version "v0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/cywagon/releases/download/v0.0.3/cywagon_0.0.3_darwin_amd64.tar.gz"
-      sha256 "d3e29e2c879027c9ff9446963a87753aeb4a1cceeed4016ec8d281d702215467"
+      url "https://github.com/enuesaa/cywagon/releases/download/v0.0.4/cywagon_0.0.4_darwin_amd64.tar.gz"
+      sha256 "c93c4e74b725fce9b26471322d432f957f4919b63c2eb007a7515ba9ff27ed56"
 
       def install
         bin.install "cywagon"
@@ -14,8 +14,8 @@ class Cywagon < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/cywagon/releases/download/v0.0.3/cywagon_0.0.3_darwin_arm64.tar.gz"
-      sha256 "a5e18186ddfd14d3f843879533fde79ff7b93e136e33a4eeff7e2076d03267c7"
+      url "https://github.com/enuesaa/cywagon/releases/download/v0.0.4/cywagon_0.0.4_darwin_arm64.tar.gz"
+      sha256 "8bb26a066a049422dbec3d0c7a30ebdb6018003bb3334b8fa74ad63bd56a4635"
 
       def install
         bin.install "cywagon"
