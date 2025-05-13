@@ -1,12 +1,12 @@
 class Walkhttp < Formula
   desc ""
   homepage ""
-  version "v0.0.12"
+  version "v0.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/walkhttp/releases/download/v0.0.12/walkhttp_0.0.12_darwin_amd64.tar.gz"
-      sha256 "6a1f39f99d2b36b78c37f60090016dc39783ea370477b8a149693baa216a7eea"
+      url "https://github.com/enuesaa/walkhttp/releases/download/v0.0.13/walkhttp_0.0.13_darwin_amd64.tar.gz"
+      sha256 "767e9573697a8b6403b6f088b94e5e53af13242492faaa296747ce32ef46ec85"
 
       def install
         bin.install "walkhttp"
@@ -14,8 +14,8 @@ class Walkhttp < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/walkhttp/releases/download/v0.0.12/walkhttp_0.0.12_darwin_arm64.tar.gz"
-      sha256 "09ba8cb1788a0dc25c591999d5e0c1bdad8e92ebcb02276827197ee8d20e4081"
+      url "https://github.com/enuesaa/walkhttp/releases/download/v0.0.13/walkhttp_0.0.13_darwin_arm64.tar.gz"
+      sha256 "128bacc2c7cc05b87605ec858edbabd5650b196e81281d322ec134b3874cc784"
 
       def install
         bin.install "walkhttp"
