@@ -4,5 +4,5 @@
 # ruby
 *.gem
 *.rbc
-/.bundle/
+.bundle
 .gem_rbs_collection
