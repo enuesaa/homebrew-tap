@@ -26,11 +26,11 @@ class Assetfetcher
   def fetch_body(url)
     uri = URI.parse(url)
     response = Net::HTTP.get_response(uri)
-    puts "#{response.code}: #{uri.host}"
+    # puts "#{response.code}: #{uri.host}"
 
     uri = URI.parse(response['location'])
     response = Net::HTTP.get_response(uri)
-    puts "#{response.code}: #{uri.host}"
+    # puts "#{response.code}: #{uri.host}"
 
     response.body
   end
