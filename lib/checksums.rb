@@ -10,11 +10,11 @@ class Checksums
     lines = text.split("\n")
     for line in lines do
       sha256, file = line.split(/\s+/)
-      if file.include? 'darwin_amd64'
+      if file.include?('darwin_amd64') || file.include?('x86_64-apple-darwin')
         @macamd64url = calcurl(checksum_file_url, file)
         @macamd64sha256 = sha256
       end
-      if file.include? 'darwin_arm64'
+      if file.include?('darwin_arm64') || file.include?('aarch64-apple-darwin')
         @macarm64url = calcurl(checksum_file_url, file)
         @macarm64sha256 = sha256
       end
