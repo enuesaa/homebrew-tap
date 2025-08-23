@@ -1,6 +1,7 @@
 require 'octokit'
 require 'net/http'
 require 'faraday'
+require 'faraday_middleware'
 
 class Assetfetcher
   attr_accessor :repo
