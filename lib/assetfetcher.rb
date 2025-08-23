@@ -24,14 +24,9 @@ class Assetfetcher
   end
 
   def fetch_body(url)
-    uri = URI.parse(url)
-    response = Net::HTTP.get_response(uri)
-    # puts "#{response.code}: #{uri.host}"
-
-    uri = URI.parse(response['location'])
-    response = Net::HTTP.get_response(uri)
-    # puts "#{response.code}: #{uri.host}"
-
+    conn = Faraday.new
+    response = conn.get(url)
+    
     response.body
   end
 end
