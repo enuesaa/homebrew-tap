@@ -25,9 +25,11 @@ class Assetfetcher
   end
 
   def fetch_body(url)
-    conn = Faraday.new
+    conn = Faraday.new do |f|
+      f.response :follow_redirects
+    end
+
     response = conn.get(url)
-    
     response.body
   end
 end
