@@ -1,12 +1,12 @@
 class Difii < Formula
   desc ""
   homepage ""
-  version "v0.0.15"
+  version "v0.0.16"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/difii/releases/download/v0.0.15/difii_0.0.15_darwin_amd64.tar.gz"
-      sha256 "30e15cb24b0cd140b491a600790994769318c18fdc4d58ae42ef6e76d50ea509"
+      url "https://github.com/enuesaa/difii/releases/download/v0.0.16/difii_0.0.16_darwin_amd64.tar.gz"
+      sha256 "daff6c274d7adcb1e54af4b75e881045befc38f7605c0259ab0f3ec2b30db091"
 
       def install
         bin.install "difii"
@@ -14,8 +14,8 @@ class Difii < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/difii/releases/download/v0.0.15/difii_0.0.15_darwin_arm64.tar.gz"
-      sha256 "4effa5d906a68024c2f16d1f3be0c6a5ffcbb31a833576a268f7de7fe45a0682"
+      url "https://github.com/enuesaa/difii/releases/download/v0.0.16/difii_0.0.16_darwin_arm64.tar.gz"
+      sha256 "86f38a13f6bfd5670f92f0c747688a4b4022d25f831bd1c0a5e35842b8d2ad6e"
 
       def install
         bin.install "difii"
