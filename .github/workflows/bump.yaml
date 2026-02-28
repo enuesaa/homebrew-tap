@@ -21,6 +21,8 @@ jobs:
 
       - run: bundle install
       - run: rake run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # create pr if file changed
       - id: pr
