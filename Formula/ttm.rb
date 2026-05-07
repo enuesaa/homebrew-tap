@@ -1,12 +1,12 @@
 class Ttm < Formula
   desc ""
   homepage ""
-  version "v0.0.14"
+  version "v0.0.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/ttm/releases/download/v0.0.14/ttm-v0.0.14-x86_64-apple-darwin.tar.gz"
-      sha256 "e8156ce29bf28c950128984b76fd95e56568cc692aa73283a48d84a5ac25ace6"
+      url "https://github.com/enuesaa/ttm/releases/download/v0.0.15/ttm-v0.0.15-x86_64-apple-darwin.tar.gz"
+      sha256 "4291178dacbdcfdb5e2d017ff93c0a44cbb413a897f5fb576a01439721980fc8"
 
       def install
         bin.install "ttm"
@@ -14,8 +14,8 @@ class Ttm < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/ttm/releases/download/v0.0.14/ttm-v0.0.14-aarch64-apple-darwin.tar.gz"
-      sha256 "cf15aa440f3382e66411f1eb8895b4082abb95a9db3d9689f5ec12b06c92c7e7"
+      url "https://github.com/enuesaa/ttm/releases/download/v0.0.15/ttm-v0.0.15-aarch64-apple-darwin.tar.gz"
+      sha256 "dc7c664818afeab966490e6817670f8d04d3385c49d06450109e6a93d4e122cf"
 
       def install
         bin.install "ttm"
