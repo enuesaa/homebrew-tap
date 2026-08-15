@@ -7,4 +7,8 @@ gem "faraday-retry", "~> 2.0"
 gem "faraday-follow_redirects"
 gem "octokit", "~> 8.1"
 
+gem "erb"
+gem "fileutils"
+gem "tsort"
+
 gem "steep", require: false
