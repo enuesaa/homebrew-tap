@@ -1,5 +1,5 @@
 task :run do
-  ruby 'lib/main.rb'
+  sh 'bundle exec ruby lib/main.rb'
 end
 
 # check type error with steep

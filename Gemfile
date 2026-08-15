@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem "faraday"
-gem "faraday-retry", "~> 1.0"
+gem "faraday-retry", "~> 2.0"
 gem "faraday-follow_redirects"
 gem "octokit", "~> 8.1"
 
