@@ -3,8 +3,8 @@
 ## Commands
 ### Install Ruby
 ```bash
-rbenv install 3.3.7
-rbenv local 3.3.7
+rbenv install 4.0.6
+rbenv local 4.0.6
 rbenv rehash
 ruby --version
 ```
