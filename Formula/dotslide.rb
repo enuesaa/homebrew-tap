@@ -1,12 +1,12 @@
 class Dotslide < Formula
   desc ""
   homepage ""
-  version "v0.0.7"
+  version "v0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/dotslide/releases/download/v0.0.7/dotslide_0.0.7_darwin_amd64.tar.gz"
-      sha256 "a1cfa404903456b91a97435e6f2a2d94e99299aceba409d58b516881d409617f"
+      url "https://github.com/enuesaa/dotslide/releases/download/v0.0.6/dotslide_0.0.6_darwin_amd64.tar.gz"
+      sha256 "d400341b9ab5e3e1ecda8df41a003cf5d7eb2b3676e49cc7428d9c603d2f5321"
 
       def install
         bin.install "dotslide"
@@ -14,8 +14,8 @@ class Dotslide < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/dotslide/releases/download/v0.0.7/dotslide_0.0.7_darwin_arm64.tar.gz"
-      sha256 "9932dbec35703db0dd874cdd3d564e737ff0da484d0dff6b7db7c562f51a5a69"
+      url "https://github.com/enuesaa/dotslide/releases/download/v0.0.6/dotslide_0.0.6_darwin_arm64.tar.gz"
+      sha256 "a0f32c12dafde5713497f4ae6db2575936a700af5ce080c56cb0a83da185f10f"
 
       def install
         bin.install "dotslide"
