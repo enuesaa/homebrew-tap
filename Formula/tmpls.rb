@@ -5,6 +5,10 @@ class Tmpls < Formula
 
   def install
     libexec.install "tmpls.rb"
-    (bin/"tmpls").write_env_script libexec/"tmpls.rb"
+    (bin/"tmpls").write <<~EOS
+      #!/bin/sh
+      exec ruby "#{libexec}/tmpls.rb" "$@"
+    EOS
+    chmod 0755, bin/"tmpls"
   end
 end
