@@ -1,14 +1,16 @@
 class Tmpls < Formula
-  homepage "https://github.com/enuesaa/tmpls"
-  url "https://github.com/enuesaa/tmpls/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "5409755432465bc89622b2f89d3c9a696732c3461844d5d4aafc959d60bbefbe"
+  desc ""
+  homepage ""
+  version "v0.0.5"
 
-  def install
-    libexec.install "tmpls.rb"
-    (bin/"tmpls").write <<~EOS
-      #!/bin/sh
-      exec ruby "#{libexec}/tmpls.rb" "$@"
-    EOS
-    chmod 0755, bin/"tmpls"
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/enuesaa/my-templates/releases/download/v0.0.5/tmpls-v0.0.5-aarch64-apple-darwin.tar.gz"
+      sha256 "a9ec05c6ebb2d6e3fdab4f6fba01fe4a919cd5a6acf2a4a1d413b7b9cd2c25bf"
+
+      def install
+        bin.install "tmpls"
+      end
+    end
   end
 end
