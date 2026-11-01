@@ -1,12 +1,12 @@
 class Tmpl < Formula
   desc ""
   homepage ""
-  version "v2026.10.31"
+  version "v2026.11.01"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/my-template-apps/releases/download/v2026.10.31/tmpl-v2026.10.31-aarch64-apple-darwin.tar.gz"
-      sha256 "e60f370562438460b8cef7bc3980227c03b4672e44b2adba56ec27b36043ec0f"
+      url "https://github.com/enuesaa/my-template-apps/releases/download/v2026.11.01/tmpl-v2026.11.01-aarch64-apple-darwin.tar.gz"
+      sha256 "925254f8dd9fdc80c23b05192d7e998fb867edc5e10a50dda2a4ca1b4898b105"
 
       def install
         bin.install "tmpl"
