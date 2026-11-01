@@ -1,12 +1,12 @@
 class Licat < Formula
   desc ""
   homepage ""
-  version "v0.0.7"
+  version "v0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/licat/releases/download/v0.0.7/licat-x86_64-apple-darwin.tar.gz"
-      sha256 "c3617bb74c529b86ce3a5e371d837cebcf2aa45ddac004fd98c811eedda993bf"
+      url "https://github.com/enuesaa/licat/releases/download/v0.0.8/licat-x86_64-apple-darwin.tar.gz"
+      sha256 "c7055ef6c13d1f9f1bba9a14724411547d750df382051afaffe20282082f9e90"
 
       def install
         bin.install "licat"
@@ -14,8 +14,8 @@ class Licat < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/licat/releases/download/v0.0.7/licat-aarch64-apple-darwin.tar.gz"
-      sha256 "f236ce1bdfe5e606642d6e3769d2f11b1832a7cd712e51eff0feab3192f776ea"
+      url "https://github.com/enuesaa/licat/releases/download/v0.0.8/licat-aarch64-apple-darwin.tar.gz"
+      sha256 "8940ef6d34815c1187f0996351e93a0d257461c04fc3babe9233f6165109cfa0"
 
       def install
         bin.install "licat"
