@@ -7,11 +7,13 @@ class Program
 
   def initialize(user, name)
     @user = user
-    @name = name
+    repo_name, bin_name = name.split(':')
+    @repo_name = repo_name
+    @name = bin_name || repo_name
   end
 
   def repo
-    "#{@user}/#{@name}"
+    "#{@user}/#{@repo_name}"
   end
 
   def fetch_version
