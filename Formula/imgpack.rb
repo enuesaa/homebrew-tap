@@ -1,12 +1,12 @@
 class Imgpack < Formula
   desc ""
   homepage ""
-  version "v0.1.6"
+  version "v0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enuesaa/imgpack/releases/download/v0.1.6/imgpack-v0.1.6-x86_64-apple-darwin.tar.gz"
-      sha256 "cb81f4ee777fbee749b5b4040edbced948da8807cf200c830521aa7bab5c4b74"
+      url "https://github.com/enuesaa/imgpack/releases/download/v0.1.7/imgpack-v0.1.7-x86_64-apple-darwin.tar.gz"
+      sha256 "a4fcd6468b35dfc1722feaf780e952bf15537bab8d8dfb495f6671adf2279fed"
 
       def install
         bin.install "imgpack"
@@ -14,8 +14,8 @@ class Imgpack < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/enuesaa/imgpack/releases/download/v0.1.6/imgpack-v0.1.6-aarch64-apple-darwin.tar.gz"
-      sha256 "67e9fdfdb478ea226dd2d889f11f4fdd306eb1b08e5a173ffbc99ca442078dc5"
+      url "https://github.com/enuesaa/imgpack/releases/download/v0.1.7/imgpack-v0.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "9e6415a6bec849e537ca88bf1ca9cc508bfb5591cacd9a554acbead5126f6a4d"
 
       def install
         bin.install "imgpack"
